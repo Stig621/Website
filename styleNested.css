@@ -1,0 +1,62 @@
+
+@font-face{
+    font-family: 'csrosd';
+    src:url(fonts/VCR_OSD_MONO_1.001.ttf)
+}
+@import url('fonts/VCR_OSD_MONO_1.001.ttf');
+body {
+    
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+li , a, button {
+    font-family: csrosd ;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(234, 237, 240);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: rgba(0, 0, 0, 0.312);
+    
+}
+.pageCenter {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+.pageContent {
+    font-family: csrosd;
+    font-weight: 400;
+    font-size: 16px;
+    color: aliceblue;
+}
+
+h1,h3 {
+    color: rgb(255, 47, 0);
+}
+  .gallery-item {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    
+  }
+  .gallery-item img {
+  
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-top: 5%;
+    border-radius: 5%;
+  }
